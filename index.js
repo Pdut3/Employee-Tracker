@@ -1,17 +1,17 @@
-const mysql = ("mysql");
-const inquirer = ("inquirer");
+const mysql = require("mysql2");
+const inquirer = require("inquirer");
 
 
-const connection = mysql.createConnection((
+const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
     password: "password",
     database: "employees_db",
-));
+});
 
 function start() {
-    inquirer.createPromptModule({
+    inquirer.createPrompt({
         name: "action",
         type: "list",
         message: "How can we help you today?",
@@ -50,7 +50,7 @@ function start() {
             case "Exit":
                 connection.end();
                 break;
-            default;
+            default:
                 break;
         }
     })
