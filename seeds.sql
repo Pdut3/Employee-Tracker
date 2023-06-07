@@ -13,7 +13,7 @@ INSERT INTO role (title, salary, department_id) VALUES
 ("Human Resource Manager", 70000, 4),
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
-("Jim", "Campbell", 1, 6),
-("Jessica", "Jones", 2, 5),
-("Doug", "Johnson", 2, 4), 
-("Anna", "Gomez", 4, 3),
+("Jim", "Campbell", 1, 4),
+("Jessica", "Jones", 2, 3),
+("Doug", "Johnson", 3, 2), 
+("Anna", "Gomez", 4, 1),
